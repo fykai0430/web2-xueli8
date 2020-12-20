@@ -99,9 +99,7 @@ function rebegin() {
 	time = 0;//重置时间
 	//保持页面一加载初就是游戏正在进行的状态
 	if(pause) begin();
-	var temp = d[to];
-	d[to] = d[i];
-	d[i] = temp;
+	
 	for(var i = 1; i <= 9; i++){
 		var to = parseInt(Math.random() * (i - 1) + 1);//随机产生数字1-9
 		//d[i]与d[to]进行交换，=0意味着空格，不用加样式了
@@ -115,5 +113,8 @@ function rebegin() {
 		}
 		
 	}
+	var temp = d[to];
+	d[to] = d[i];
+	d[i] = temp;
 }
 
