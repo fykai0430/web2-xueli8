@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang = "zh-CN">
+<head>
+	<meta charset = "UTF-8">
+	<title>期末作业</title>
+	<link rel="stylesheet" type="text/css" href="xueli.css"/>
+	<script src="xueli.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<div class = "title">拼图游戏</div>
+	游戏规则：
+	<br />玩家只能点击空格块旁边的方块使方块移动，最终使方块按照1-8顺序排列好即游戏结束
+	<br /><br />
+	<div class = "box">
+		<!-- 九宫格 -->
+		<div id = "pic">
+			<div id = "d1" onclick = "move(1)"> 1 </div>
+			<div id = "d2" onclick = "move(2)"> 2 </div>
+			<div id = "d3" onclick = "move(3)"> 3 </div>
+			<div id = "d4" onclick = "move(4)"> 4 </div>
+			<div id = "d5" onclick = "move(5)"> 5 </div>
+			<div id = "d6" onclick = "move(6)"> 6 </div>
+			<div id = "d7" onclick = "move(7)"> 7 </div>
+			<div id = "d8" onclick = "move(8)"> 8 </div>
+		</div>
+		<div id = "rig-btn">
+				<div>计时:</div>
+				<div id = "jishi">0分0秒</div> <br />
+				<button type = "button" id = "begin" onclick = "begin()">开始</button>
+				<button type = "button" id = "rebegin" onclick = "rebegin()">重新开始</button>
+		</div>
+	</div>
+	<script type = "text/javascript">
+		window.onload = function(){
+			rebegin();
+		}
+	</script>
+</body>
+</html>

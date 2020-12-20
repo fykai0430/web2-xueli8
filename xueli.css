@@ -1,0 +1,70 @@
+.title {
+	width: 500px;
+	text-align: center;
+	font-size: 30px;
+}
+.box {
+	width: 500px;
+}
+#pic{
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	background-color: green;
+}
+#pic div{
+	position: absolute;
+	width: 95px;
+	height: 95px;
+	font-size: 50px;
+	line-height: 95px;
+	background-color: seagreen;
+	text-align: center;
+	transition: 0.5s;
+	cursor: pointer;
+}
+#rig-btn{
+	float: right;
+}
+#d1{
+	left: 0px;
+	top: 0px;
+}
+/* 对应ToGoArray数组
+[0,0],
+[100,0],
+[200,0],
+[0,100],
+[100,100],
+[200,100],
+[0,200],
+[100,200] 
+以此类推*/
+#d2{
+	left: 100px;
+	top: 0px;
+}
+#d3{
+	left: 200px;
+	top: 0px;
+}
+#d4{
+	left: 0px;
+	top: 100px;
+}
+#d5{
+	left: 100px;
+	top: 100px;
+}
+#d6{
+	left: 200px;
+	top: 100px;
+}
+#d7{
+	left: 0px;
+	top: 200px;
+}
+#d8{
+	left: 100px;
+	top: 200px;
+}
