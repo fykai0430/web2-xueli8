@@ -99,7 +99,6 @@ function rebegin() {
 	time = 0;//重置时间
 	//保持页面一加载初就是游戏正在进行的状态
 	if(pause) begin();
-	//设tmp交换中介
 	var temp = d[to];
 	d[to] = d[i];
 	d[i] = temp;
